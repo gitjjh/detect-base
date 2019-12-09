@@ -6,9 +6,9 @@ FROM  jjhdochub/base-image-detect:latest
 #RUN yum -y install python-pip; yum clean all
 #RUN apt-get update -y
 
-RUN sudo mkdir -p /root/detection-test
-WORKDIR /root/detection-test
-ADD . /root/detection-test/
+#RUN sudo mkdir -p /root/detection-test
+WORKDIR /opt/app-root/detection
+ADD . /opt/app-root/detection
 
 #RUN apt-get install -y git python-pip
 
